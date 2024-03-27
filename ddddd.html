@@ -1,0 +1,38 @@
+<span class="field">
+  <span class="little_title">반려동물 이름</span>
+  <div>
+    <input type="text" name="pet-name" />
+  </div>
+</span>
+
+<!-- 반려동물 성별 -->
+<span class="field">
+  <span class="little_title">반려동물 성별</span>
+  <div class="gender">
+    <input type="radio" id="male" name="pet-gender" value="male" />
+    <label for="male">남</label>
+    <input type="radio" id="female" name="pet-gender" value="female" />
+    <label for="female">여</label>
+  </div>
+</span>
+
+<!-- 반려동물 사진 -->
+<span class="field" style="display: flex; align-items: center">
+  <span class="little_title">반려동물 사진</span>
+  <img
+    class="preview-image"
+    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    alt="프로필 미리보기"
+    style="width: 100px; height: 100px"
+  />
+  <input
+    type="file"
+    class="file-input"
+    accept="image/jpg,image/png,image/jpeg"
+  />
+
+  <!-- 삭제 버튼 -->
+  <button class="delete-btn" onclick="deletePetInfo(this)">
+    반려동물 정보 삭제
+  </button>
+</span>
